@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>YelpCamp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Roboto:300" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <!---Header --->
+            <h1>Self Care Tip Generator</h1>
+            <hr>
+            <!---Label --->
+            <%var index = Math.floor(Math.random()*results.length)%>
+            <p id="showTip"><%=results[index].tip%></p>     
+                     
+          
+
+            
+            <!---Button --->
+            <button id="btn">Clicc</button>
+        </div>
+
+
+<script>
+document.getElementById("btn").addEventListener("click", myFunction);
+function myFunction() {
+    //index = Math.floor(Math.random()*results.length)
+    //return index;
+    location.reload();
+    //I could not, for the life of me, get this working
+    //Current implementation uses the same logic but relies on reload instead of a button click event
+    // var rand = Math.floor(Math.random()*results.length);
+    //var tip = results[index].tip;
+    //document.getElementById("showTip").innerHTML = tip;
+ 
+}
+</script>
+    </body>
+    
+</html>
